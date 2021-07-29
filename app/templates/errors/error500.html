@@ -1,0 +1,19 @@
+{% extends 'baseError.html' %}
+{% block title %}
+    {{ super() }}
+    500
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Lo sentimos !</h1>
+                <h2>Error interno del servidor 500</h2>
+                <hr>
+                <p>Por Fabor comuniquese con el administrador</p>
+                <p>{{ error }}</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
